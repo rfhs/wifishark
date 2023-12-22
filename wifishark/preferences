@@ -1758,6 +1758,10 @@ protocols.display_hidden_proto_items: TRUE
 # TRUE or FALSE (case-insensitive)
 #dsi.desegment: TRUE
 
+# Semicolon-separated list of private RSA keys used for DTLS decryption. Used by versions of Wireshark prior to 1.6
+# A string
+#dtls.keys_list: 
+
 # redirect dtls debug to file name; leave empty to disable debug, use "-" to redirect output to stderr
 # 
 # A path to a file
@@ -5181,6 +5185,10 @@ protocols.display_hidden_proto_items: TRUE
 # Whether the TIPC-over-TCP dissector should reassemble messages spanning multiple TCP segments. To use this option, you must also enable "Allow subdissectors to reassemble TCP streams" in the TCP protocol settings.
 # TRUE or FALSE (case-insensitive)
 #tipc.desegment: TRUE
+
+# Semicolon-separated list of private RSA keys used for TLS decryption. Used by versions of Wireshark prior to 1.6
+# A string
+#tls.keys_list: 
 
 # Redirect TLS debug to the file specified. Leave empty to disable debugging or use "-" to redirect output to stderr.
 # A path to a file
