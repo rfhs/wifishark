@@ -15,4 +15,4 @@
 @802.11w capable@wlan.rsn.capabilities.mfpc == 1@[11565,32125,46003][0,0,0]
 @802.11w required@wlan.rsn.capabilities.mfpr == 1@[29298,40863,53199][0,0,0]
 @802.11w downgradeable@(((wlan.fc.type_subtype == 0x0008) && (wlan.rsn.capabilities)) && (wlan.rsn.capabilities.mfpc == 0 && wlan.rsn.capabilities.mfpr == 0))@[0,43690,65535][0,0,0]
-@Handshakes@eapol && wlan.rsn.ie.pmkid@[0,0,0][64764,59881,20303]
+@Handshakes@eapol or wlan.rsn.ie.pmkid@[0,0,0][64764,59881,20303]
